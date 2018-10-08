@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{    
+    color: #2A2D35;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.nav_wistia{
+    display:flex;
+    justify-content: space-around;
+    margin: 0px 0px 0px 30px;
+
+}
+
+.logo_wistia {
+    background: url("../img/logo_wistia.png") no-repeat center;
+    background-size: 100% auto;
+    height: 116px;
+    width: 180px;
+    flex-grow: 1; 
+}
+
+.nav_menu{
+    margin: 0px 0px 0px 30px;
+    width : 650px;
+    position: relative;
+}
+
+.nav_menu ul{
+    display:flex;
+    list-style: none;
+}
+
+.nav_menu ul li{
+    list-style: none;
+    position: relative;
+}
+
+.main_menu ul li a {
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 15px;
+    color: #6c798b;
+    font-size: 14px;
+    font-weight: 600;
+    height: 59px;
+    line-height: 58px;
+}
+
+.main_menu> ul> li:hover:before  {
+    content: "";
+    background: #f9f9f9;
+    border: 1px solid #efefef;
+    width: 20px;
+    height: 20px;
+    
+    border-radius: 5px;
+    
+    position: absolute;
+    bottom: -15px;
+    left: 60%;
+    
+    transform-origin: center;
+    transform: translate(-50%, 0) rotateX(20deg) rotateZ(45deg);
+    
+}
+
+.main_menu ul li .active{
+    color:black;
+}
+
+.main_menu ul li a:hover{
+    color:black;
+}
+
+.nav_menu .main_menu ul li .sub_menu {
+    position: absolute;
+    background: #f9f9f9;
+    width: 650px;
+    z-index: 10;
+}
+
+.nav_right_buttons{
+    margin-left: 0px;
+    align-self: center;
+}
+
+.nav_right_buttons a{
+    text-decoration: none;
+    color: #3ea9f5;
+    padding: 50px;
+    border-left: 1px solid #efefef;  
+}
+.nav_right_buttons a:hover{
+    background: #f9f9f9;
+}
+
+.img_header{    
+   position: relative;
+}
+
+.header_message{
+    position: absolute;
+    top:30%;
+    left:10%;
+}
+
+.header_message button{
+    margin: 0;
+    font-size: 20px;
+    padding: 22px 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.header_message h1{
+    color: #000;
+    font-size: 2.6em;
+    font-weight: 400;
+    width: 470px;
+    margin-bottom: 40px;
+}
+
+.header_message h1 span{
+    color: #fff;
+}
+
+.header_message button:hover{
+    border-bottom: 5px solid #c9baba;
+    cursor: pointer;
+}
+.card{
+    display: flex;
+    margin-top: -5px;
+}
+
+.card .card_icon{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+.card .card_title{
+    color: #fff;
+    width: 100%;
+    font-size: 23px;
+    line-height: 30px;
+    margin: 15px 0 10px;
+}
+
+.card .card_message{
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.card .card_button{
+    margin: 60px 0px 0px 0px;
+    display: block;
+}
+
+.card .card_button a{ 
+    align-self: flex-end;
+    background-color: transparent;
+    padding: 17px 16px;
+    color: white;
+    color: black;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.card .card_button a:hover{ 
+    background-color: #fff;
+}
+
+.card .card_one{
+    background-color: #FED24A;
+    padding: 45px 58px 50px;
+}
+
+.card .card_two{
+    background-color: #51C29F;
+    padding: 45px 58px 50px;
+}
+
+.card .card_three{
+    background-color: #3EA9F5;
+    padding: 45px 58px 50px;
+}
+
+.sponsor{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 0 30px;
+}
+
+.sponsor img{ 
+    transition: all .3s ease-in-out;
+}
+
+.sponsor img:hover{ 
+    transform: scale(1.1);
+}
+
+.sponsor p{
+    max-width: 160px;
+    padding: 0 30px;
+    font-weight: 600;
+    font-size: 17px;
+    color: #9CA8B7;
+}
+
+.featured-blocks{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.featured-block{
+    padding: 30px 20px;
+}
+
+.featured-block img{
+    width: 350px;
+    height: 250px;  
+    
+}
+
+.featured-block h3{
+    margin: 20px 0 30px 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.featured-block p{
+    width: 350px;   
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.featured-block a{
+    color: #217AD5;
+}
+
+.featured-block a:first-child{
+    cursor: pointer;
+    position: relative;    
+}
+
+.featured-block>a:first-child:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left:0;
+    width: 350px;
+    height: 250px; 
+    background: rgba(78, 162, 134, 0.5);
+}
+
+.promo-bar {
+    color: #777777;
+    font-size: 18px;
+    padding: 25px 40px;
+    text-align: center;
+    background-color: #e8e7e6;
+}
+
+.promo-bar a{
+    color: #777777;
+}
+
+footer{
+    background: #2A2D35;
+    color: #fff;
+    padding: 47px 60px 25px;
+}
+
+footer .footer_container {
+    
+    display: flex;
+}
+
+footer .footer_container .card_info .wistia_descriptin{
+    font-size: 25px;
+    width: 300px;
+    margin: 20px 0 20px;
+    line-height: 35px;
+}
+
+footer .footer_container .social{
+    font-size: 16px;
+    
+}
+
+footer .footer_container .social a{
+    text-decoration: none;
+    color: #3ea9f5;
+}
+
+footer .footer_container .social a:hover{
+    border-bottom: 1px solid #3ea9f5;
+}
+
+footer .footer_menu{
+    display: flex;
+}
+
+footer .footer_menu .footer_menu_list{
+    margin-left: 70px;
+}
+
+footer .footer_menu .footer_menu_list ul{
+    margin-top: 20px;
+    list-style: none;
+    
+}
+
+footer .footer_menu .footer_menu_list ul li{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    line-height: 25px;
+}
+
+footer .footer_menu .footer_menu_list ul li a{
+    text-decoration: none;
+    color: #b2b9c1;  
+}
+
+footer .footer_menu .footer_menu_list ul li a:hover{
+    border-bottom: 1px solid #b2b9c1;
+}
+
+footer hr {
+    margin: 3em 0 1em;
+    color:#efefef;
+}
+
+footer .copyright{
+    color: #b2b9c1;
+    margin: 3em 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
